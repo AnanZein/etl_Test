@@ -14,6 +14,7 @@ def read_csv():
 @task(retries=3)
 def transform_data(df):
     df['Menu Items'] = df['Menu Items'].str.lower()
+    print("hii")
     return df
 
 
